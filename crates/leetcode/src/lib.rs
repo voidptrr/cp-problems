@@ -9,9 +9,9 @@ pub use problems::{
     problem_1470, problem_1480, problem_1513, problem_1592, problem_1817,
     problem_1894, problem_1929, problem_1957, problem_1980, problem_1995,
     problem_2037, problem_2043, problem_2053, problem_2090, problem_2165,
-    problem_2210, problem_2335, problem_2379, problem_2405, problem_2578,
-    problem_2579, problem_2895, problem_3028, problem_3099, problem_3211,
-    problem_3809,
+    problem_2210, problem_2335, problem_2379, problem_2405, problem_2486,
+    problem_2578, problem_2579, problem_2895, problem_3028, problem_3099,
+    problem_3211, problem_3809,
 };
 
 #[cfg(test)]

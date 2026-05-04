@@ -1,4 +1,5 @@
 pub mod ambiguous_coordinates;
+pub mod append_characters_to_string_to_make_subsequence;
 pub mod best_reachable_tower;
 pub mod combination_sum;
 pub mod combination_sum_ii;
@@ -39,6 +40,7 @@ pub mod subsets;
 pub mod subsets_ii;
 
 pub use ambiguous_coordinates as problem_816;
+pub use append_characters_to_string_to_make_subsequence as problem_2486;
 pub use best_reachable_tower as problem_3809;
 pub use combination_sum as problem_39;
 pub use combination_sum_ii as problem_40;
