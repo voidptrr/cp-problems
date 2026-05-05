@@ -37,6 +37,7 @@ pub mod rotate_image;
 pub mod shifting_letters;
 pub mod simple_bank_system;
 pub mod smallest_value_of_the_rearranged_number;
+pub mod sort_integers_by_binary_reflection;
 pub mod subsets;
 pub mod subsets_ii;
 
@@ -79,5 +80,6 @@ pub use rotate_image as problem_48;
 pub use shifting_letters as problem_848;
 pub use simple_bank_system as problem_2043;
 pub use smallest_value_of_the_rearranged_number as problem_2165;
+pub use sort_integers_by_binary_reflection as problem_3769;
 pub use subsets as problem_78;
 pub use subsets_ii as problem_90;
