@@ -4,7 +4,7 @@ pub struct Solution;
 
 impl Solution {
     fn concat(a: i32, b: i32, c: i32) -> i32 {
-        (((a << 32 - b.leading_zeros()) | b) << 32 - c.leading_zeros()) | c
+        (((a << (32 - b.leading_zeros())) | b) << (32 - c.leading_zeros())) | c
     }
 
     pub fn max_good_number(nums: Vec<i32>) -> i32 {
