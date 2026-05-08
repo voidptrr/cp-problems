@@ -12,6 +12,7 @@ pub mod minimum_operations_to_equalize_array;
 pub mod number_of_students_doing_homework_at_a_given_time;
 pub mod running_sum_of_1d_array;
 pub mod shuffle_the_array;
+pub mod special_array_with_x_elements_greater_than_or_equal_x;
 pub mod split_with_minimum_sum;
 pub mod squares_of_a_sorted_array;
 
@@ -29,5 +30,6 @@ pub use minimum_operations_to_equalize_array as problem_3674;
 pub use number_of_students_doing_homework_at_a_given_time as problem_1450;
 pub use running_sum_of_1d_array as problem_1480;
 pub use shuffle_the_array as problem_1470;
+pub use special_array_with_x_elements_greater_than_or_equal_x as problem_1608;
 pub use split_with_minimum_sum as problem_2578;
 pub use squares_of_a_sorted_array as problem_977;
