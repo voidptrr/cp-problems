@@ -5,39 +5,25 @@ pub struct Solution;
 impl Solution {
     const MOD: i64 = 1_000_000_007;
 
-    fn mod_pow(mut base: i64, mut exp: i64) -> i64 {
-        let mut result = 1_i64;
-        base %= Self::MOD;
+    fn pascal_triangle(row_index: usize) -> Vec<i64> {
+        let mut row = vec![1_i64];
 
-        while exp > 0 {
-            if exp & 1 == 1 {
-                result = (result * base) % Self::MOD;
+        for _ in 0..row_index {
+            let mut next = vec![1_i64; row.len() + 1];
+            for i in 1..row.len() {
+                next[i] = (row[i - 1] + row[i]) % Self::MOD;
             }
-            base = (base * base) % Self::MOD;
-            exp >>= 1;
+            row = next;
         }
 
-        result
+        row
     }
 
     pub fn value_after_k_seconds(n: i32, k: i32) -> i32 {
-        let a = (n + k - 1) as usize;
-        let b = (n - 1) as usize;
-
-        let mut fact = vec![1_i64; a + 1];
-        for i in 1..=a {
-            fact[i] = (fact[i - 1] * i as i64) % Self::MOD;
-        }
-
-        let mut inv_fact = vec![1_i64; a + 1];
-        inv_fact[a] = Self::mod_pow(fact[a], Self::MOD - 2);
-        for i in (1..=a).rev() {
-            inv_fact[i - 1] = (inv_fact[i] * i as i64) % Self::MOD;
-        }
-
-        let result = (((fact[a] * inv_fact[b]) % Self::MOD) * inv_fact[a - b])
-            % Self::MOD;
-        result as i32
+        let row_index = (n + k - 1) as usize;
+        let pick = k as usize;
+        let triangle = Self::pascal_triangle(row_index);
+        triangle[pick] as i32
     }
 }
 
