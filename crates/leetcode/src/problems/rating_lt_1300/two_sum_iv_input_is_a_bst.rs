@@ -42,11 +42,11 @@ impl Solution {
             set.insert(current.val);
 
             if let Some(left) = &current.left {
-                stack.push(Rc::clone(left));
+                stack.push(left.clone());
             }
 
             if let Some(right) = &current.right {
-                stack.push(Rc::clone(right));
+                stack.push(right.clone());
             }
         }
 
