@@ -1,4 +1,5 @@
 pub mod ant_on_the_boundary;
+pub mod binary_tree_tilt;
 pub mod check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence;
 pub mod closest_binary_search_tree_value;
 pub mod concatenation_of_array;
@@ -19,6 +20,7 @@ pub mod squares_of_a_sorted_array;
 pub mod two_sum_iv_input_is_a_bst;
 
 pub use ant_on_the_boundary as problem_3028;
+pub use binary_tree_tilt as problem_563;
 pub use check_if_a_word_occurs_as_a_prefix_of_any_word_in_a_sentence as problem_1455;
 pub use closest_binary_search_tree_value as problem_270;
 pub use concatenation_of_array as problem_1929;
