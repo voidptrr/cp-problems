@@ -51,6 +51,7 @@ pub mod smallest_value_of_the_rearranged_number;
 pub mod sort_integers_by_binary_reflection;
 pub mod subsets;
 pub mod subsets_ii;
+pub mod unique_binary_search_trees_ii;
 pub mod water_bottles_ii;
 
 pub use ambiguous_coordinates as problem_816;
@@ -106,4 +107,5 @@ pub use smallest_value_of_the_rearranged_number as problem_2165;
 pub use sort_integers_by_binary_reflection as problem_3769;
 pub use subsets as problem_78;
 pub use subsets_ii as problem_90;
+pub use unique_binary_search_trees_ii as problem_95;
 pub use water_bottles_ii as problem_3100;

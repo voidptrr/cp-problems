@@ -5,7 +5,7 @@ pub mod rating_lt_1300;
 pub use rating_1300_1699::{
     problem_22, problem_39, problem_40, problem_45, problem_46, problem_47,
     problem_48, problem_55, problem_77, problem_78, problem_89, problem_90,
-    problem_93, problem_208, problem_216, problem_746, problem_816,
+    problem_93, problem_95, problem_208, problem_216, problem_746, problem_816,
     problem_841, problem_848, problem_1120, problem_1331, problem_1448,
     problem_1513, problem_1576, problem_1592, problem_1817, problem_1894,
     problem_1957, problem_1974, problem_1980, problem_2037, problem_2043,
